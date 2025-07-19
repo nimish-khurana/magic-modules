@@ -10,6 +10,6 @@ resource "google_oracle_database_odb_network" "{{$.PrimaryResourceId}}"{
 }
 
 data "google_compute_network" "default" {
-  name     = "new"
+  name     = "default"
   project = "{{index $.Vars "project"}}"
 }
